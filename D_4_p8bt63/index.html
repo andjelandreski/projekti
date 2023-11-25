@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domaci zadatak broj 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>This is my homework number 4</h1>
+    <form action="">
+        <fieldset>
+            <legend>Login details</legend>
+                <div class="login">
+                <div class="labels">
+                    <label for="" class="loginLabel">Name:</label>
+                    <input type="text" class="text">
+                </div>
+
+                <div class="labels">
+                    <label for="" class="loginLabel">Email:</label>
+                    <input type="email" class="text">
+                </div>
+
+                <div class="labels">
+                    <label for="" class="loginLabel">Password:</label>
+                    <input type="password" class="text">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your feedback</legend>
+            <div class="feedback">
+                <div>
+                    <label for="" class="labelsFeedback">Please check all the emotions that apply to you:</label>
+                    <p class="pFieldset">
+                        Angry
+                        <input type="checkbox" name="emotions" value="angry">
+                    </p>
+                    <p class="pFieldset">
+                        Sad
+                        <input type="checkbox" name="emotions" value="sad">
+                    </p>
+                    <p class="pFieldset">
+                        Happy
+                        <input type="checkbox" name="emotions" value="happy">
+                    </p>
+                    <p class="pFieldset">
+                        Ambivalent
+                        <input type="checkbox" name="emotions" value="ambivalent">
+                    </p>
+                </div>
+
+                <div>
+                    <label for="" class="labelsFeedback">How satisfied were you with our service?</label>
+                    <p class="pFieldset">
+                        Very satisfied
+                        <input type="radio" name="service">
+                    </p>
+
+                    <p class="pFieldset">
+                        Satisfied
+                        <input type="radio" name="service">
+                    </p>
+
+                    <p class="pFieldset">
+                        Didn't care
+                        <input type="radio" name="service">
+                    </p>
+
+                    <p class="pFieldset">
+                        Dissatisfied
+                        <input type="radio" name="service">
+                    </p>
+
+                    <p class="pFieldset">
+                        Very dissatisfied
+                        <input type="radio" name="service">
+                    </p>
+
+                    <label for="" class="labelsFeedback">Further comments:</label>
+                    <textarea maxlength="50"></textarea>
+                </div>
+            </div>
+        </fieldset>
+        <div class="photo">
+            <label for="">Bio photo:</label>
+            <input type="file">
+        </div>
+        <div class="location">
+            <p>Location visited:
+            <select name="">
+                <option value="" selected hidden>Select location</option>
+                <option value="opt1">Option1</option>
+                <option value="opt2">Option2</option>
+                <option value="opt3">Option3</option>
+                <option value="opt4">Option4</option>
+            </select>
+            </p>
+        </div>
+        <div class="submit">
+            <input type="submit">
+        </div>
+        <div class="reset">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+</html>
