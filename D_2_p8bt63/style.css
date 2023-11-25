@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(220, 220, 195);
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+img {
+    border: double red;
+}
+
+.paragraf1i3 {
+    color: #d607d9;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#paragraf2 {
+    color: rgb(220, 138, 30);
+}
+
+a:first-child {
+    color: red;
+}
+
+p a:hover {
+    color: green;
+}
