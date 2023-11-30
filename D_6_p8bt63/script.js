@@ -1,4 +1,4 @@
-//Zadatak 1
+//Zadatak broj 1
 let suma = 1000;
 let autobuskaKarta = 1000 / 5;
 let namestaj = 1000 / 3;  
@@ -6,7 +6,7 @@ let ostatakNovca = suma - (autobuskaKarta + namestaj);
 
 console.log("Za preostali boravak ostalo je: " + ostatakNovca);
 
-//Zadatak 2
+//Zadatak broj 2
 let knjiga = 40;
 let prviDan = 4;
 let drugiDan = prviDan + 2;
@@ -14,7 +14,7 @@ let drugiDan = prviDan + 2;
 let preostalaPoglavlja = knjiga - (prviDan + drugiDan);
 console.log("Do kraja knjige ostalo je jos " +preostalaPoglavlja +" poglavlja.");
 
-//Zadatak 3
+//Zadatak broj 3 
 let pera = 1500;
 let mika = 2000;
 let kusur = 1100;
