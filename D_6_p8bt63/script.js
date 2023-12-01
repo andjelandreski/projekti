@@ -1,7 +1,7 @@
 //Zadatak broj 1
 let suma = 1000;
-let autobuskaKarta = 1000 / 5;
-let namestaj = 1000 / 3;  
+let autobuskaKarta = suma / 5;
+let namestaj = suma / 3;  
 let ostatakNovca = suma - (autobuskaKarta + namestaj);
 
 console.log("Za preostali boravak ostalo je: " + ostatakNovca);
