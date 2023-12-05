@@ -1,12 +1,13 @@
 //Zadatak 1
 let v = 30;
 let n = 15;
+let x = n - v / 3;
+
 
 if(v/n >= 3){
     document.write("<h1 style='color:green;'>DA</h1>");
 } else {
-    document.write("<h1 style='color:red;'>NE</h1>");
-    document.write('Potrebno je da napusti lokal: ' + (n-v/3));
+    document.write("<h1 style='color:red;'>NE! Potrebno je da napusti lokal: " + x);
 }
 
 //Zadatak 2
