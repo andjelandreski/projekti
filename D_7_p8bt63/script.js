@@ -1,7 +1,7 @@
 //Zadatak 1
-let v = 30;
-let n = 15;
-let x = n - v / 3;
+let v = 32;
+let n = 11;
+let x = Math.ceil(n - v / 3);
 
 
 if(v/n >= 3){
