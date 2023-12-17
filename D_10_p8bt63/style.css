@@ -1,0 +1,8 @@
+table, tr, td{
+    border: 1px solid black;
+}
+
+img {
+    width: 30%;
+    margin: 20px;
+}
