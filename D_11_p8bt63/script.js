@@ -1,5 +1,4 @@
 //Zadatak 1
-
 let nizTemp = [1, 10, 42, 54, 12];
 
 let najblizaProsecnoj = niz => {
@@ -11,7 +10,7 @@ let najblizaProsecnoj = niz => {
     });
     prosecnaTemp = suma / niz.length;
     niz.forEach(t => {
-        if(Math.abs(t - prosecnaTemp) < Math.abs(t - najblizaVrednost))
+        if(Math.abs(t - prosecnaTemp) < Math.abs(najblizaVrednost - prosecaTemp))
         {
             najblizaVrednost = t;
         }
