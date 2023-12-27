@@ -15,6 +15,7 @@ let dan = {
     },
 
     //Zadatak 2
+    //Za dan se kaže da je neuobičajen ako je bilo kiše i ispod -5 stepeni, ili bilo oblačno i iznad 25 stepeni, ili je bilo i kišovito i oblačno i sunčano. Metod vraća true ukoliko je dan bio neuobičajen, u suprotnom vraća false.
     neuobicajenDan: function() {
         let neuobicajen = false;
         this.nizVreme.forEach(t => {
