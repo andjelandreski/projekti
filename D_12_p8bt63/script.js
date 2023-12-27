@@ -1,8 +1,10 @@
 
 let dan = {
     //Zadatak 1
-    nizTemp: [10, 14, 17, 25, -6],
-    nizVreme: ["Sunce", "Kisa", "Oblaci"],
+    nizTemp: [10, 14, 17, 25, -2],
+    kisa: true,
+    sunce: false,
+    oblacno: true,
 
     tropskiDan: function() {
         let topaoDan = false;
@@ -18,30 +20,25 @@ let dan = {
     //Za dan se kaže da je neuobičajen ako je bilo kiše i ispod -5 stepeni, ili bilo oblačno i iznad 25 stepeni, ili je bilo i kišovito i oblačno i sunčano. Metod vraća true ukoliko je dan bio neuobičajen, u suprotnom vraća false.
     neuobicajenDan: function() {
         let neuobicajen = false;
-        this.nizVreme.forEach(t => {
-            if(t == "Kisa"){
+            if(this.kisa == true){
                 this.nizTemp.forEach(t => {
                     if(t < -5){
                         neuobicajen = true;
                     }
                 });
             }
-            if(t == "Oblaci"){
+            if(this.oblacno == true){
                 this.nizTemp.forEach(t => {
                     if(t > 25){
                         neuobicajen = true;
                     }
                 });
             }
-            if(t == "Kisa" && t == "Sunce" && t == "Oblaci"){
+            if(this.kisa == true && this.sunce == true && this.oblacno == true){
                 neuobicajen = true;
            }
-        });
         return neuobicajen;
     }
 }
 console.log(dan.tropskiDan());
 console.log(dan.neuobicajenDan());
-
-
-
