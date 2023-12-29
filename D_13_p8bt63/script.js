@@ -20,6 +20,14 @@ let knjiga3 = {
 }
 let nizKnjiga = [knjiga1, knjiga2, knjiga3];
 
+let tabela = "<table>";
+let red = "<tr>";
+for(let i = 0; i < nizKnjiga.length; i++){
+    red += `<td class="col1"></td><td class="col2"></td></tr>`;
+}
+tabela += red;
+document.body.innerHTML += tabela;
+
 let kol1 = document.querySelectorAll(".col1");
 let kol2 = document.querySelectorAll(".col2");
 let tab = document.getElementsByTagName("tr");
