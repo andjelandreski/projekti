@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: aliceblue;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    color: cadetblue;
+    text-decoration: overline 2px cadetblue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h4 {
+    background-color: cadetblue;
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.radio{
+    margin-left: 50%;
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    font-size: 22px;
+    padding: 10px;
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: cadetblue;
+}
+
+div {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    text-align: center;
+}
