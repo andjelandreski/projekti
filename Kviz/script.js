@@ -75,7 +75,6 @@ for(let i = 0; i < svaPitanja.length; i++){
 }
 
 let redBr = 1;
-
 for(let i = 0; i < 5; i++){
     pitanjKojaPrikazujem[i] = svaPitanja[i];
     document.body.innerHTML += `<h4>${redBr}. ${svaPitanja[i].tekst}</h4>`;
@@ -92,7 +91,6 @@ for(let i = 0; i < 5; i++){
         document.body.innerHTML += odgovorHTML;
         br++;
     }
-    
     redBr++;
 }
 
