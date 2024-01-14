@@ -68,7 +68,7 @@ class Knjiga {
     }
 
     dugackoIme () {
-        if(this.autor.length > 18){
+        if(this.autor.length > 18){ 
             return true;
         } else {
             return false;

@@ -45,4 +45,4 @@ let prosecnaStranica = niz => {
     }
     return prosecnaCenaStraniceSvakeKnjige;
 }
-console.log(prosecnaStranica(knjige));
+console.log(prosecnaStranica(knjige)); 
