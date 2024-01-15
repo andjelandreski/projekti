@@ -37,12 +37,14 @@ let prosecnaCena = niz => {
 console.log(prosecnaCena(knjige));
 
 let prosecnaStranica = niz => {
-    let prosecnaCenaStraniceSvakeKnjige = [];
-    let prosecCena = 0;
-    for(let i = 0; i < niz.length; i++){
-        prosecCena = niz[i].cena / niz[i].brojStrana;
-        prosecnaCenaStraniceSvakeKnjige.push(prosecCena);
-    }
-    return prosecnaCenaStraniceSvakeKnjige;
+    let sumaSvihCena = ukupnaCena(niz);
+    let brStranicaSvih = 0;
+    let rezultat = 0;
+    niz.forEach(k => {
+        brStranicaSvih += k.brojStrana;
+    });
+    rezultat = brStranicaSvih / sumaSvihCena;
+    console.log(brStranicaSvih);
+    return rezultat;
 }
 console.log(prosecnaStranica(knjige)); 
