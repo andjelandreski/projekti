@@ -1,0 +1,32 @@
+[
+    {
+        "imePrezime": "Vlade Divac",
+        "visina": 2.16,
+        "timovi": ["Sloga Kraljevo", "Partizan", "Lakers", "Sak. kingsi"]
+    },
+    {
+        "imePrezime": "Milos Teodosic",
+        "visina": 1.96,
+        "timovi": ["FMP Zeleznik", "Borc Cacak", "Olimpijakos", "CSKA Moskva", "Los Andjeles klipersi", "Virtus Bolonja", "Crvena zvezda"]
+    },
+    {
+        "imePrezime": "Bogdan Bogdanovic",
+        "visina": 1.98,
+        "timovi": ["Partizan", "Fenerbahce", "Sakramento kingsi", "Atlanta hoksi"]
+    },
+    {
+        "imePrezime": "Dejan Bodiroga",
+        "visina": 2.05,
+        "timovi": ["Proleter", "Zadar", "Trst", "Olimpija", "Real Madrid", "Barselona", "Virtus Roma"]
+    },
+    {
+        "imePrezime": "Zeljko Rebraca",
+        "visina": 2.11,
+        "timovi": ["NAP Novi Sad", "Partizan", "Beneton Trevizo", "Panatinaikos", "Detriot pistonsi", "Los Andjeles klipersi", "Valensija", "Lakers"]
+    },
+    {
+        "imePrezime": "Borisa Simanic",
+        "visina": 2.07,
+        "timovi": ["Crvena zvezda", "FMP", "Mega basket", "Saragosa 2002"]
+    }
+]
