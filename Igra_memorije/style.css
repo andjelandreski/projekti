@@ -1,0 +1,64 @@
+img {
+    width: 100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.container-left{
+    float: left;
+}
+
+#container-right{
+    float: right;
+}
+
+.ontainer-left h3{
+    font-size: 22px;
+    color: rgb(183, 134, 9);
+    
+}
+
+#timer {
+    margin-left: 80%;
+}
+
+#count-up-timer {
+    width: 60px;
+    text-align: center;
+}
+
+
+#container-right h3{
+    color: goldenrod;
+    
+}
+
+table {
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+
+table th {
+    border: 1px solid black;
+    width: 100px;
+    color: goldenrod;
+}
+
+table td {
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    .flex {
+        display: block;
+    }
+    
+    #container-right{
+        float: left;
+    }
+}

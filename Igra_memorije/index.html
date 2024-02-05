@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex">
+        <!--DIV u kome se nalazi naslov igre, input za ime i pocetak igre, div sa inputima za biranje nivoa, kartice-->
+        <div class="container-left" >
+            <h3>Igra memorije</h3>
+            <div id="timer">
+                <p id="count-up-timer"></p>
+            </div>
+            <!--Input za korisnicko ime da bi igra mogla da pocne-->
+            <input type="text" name="name" id="name" placeholder="Unesite korisnicko ime">
+            <!--Biranje nivoa(broja slicica)-->
+            <div id="selectLevel">
+                <input type="radio" name="selectLevel" id="lako" value="lako" checked>
+                <label for="lako">Lako</label>
+
+                <input type="radio" name="selectLevel" id="srednje" value="srednje">
+                <label for="srednje">Srednje</label>
+
+                <input type="radio" name="selectLevel" id="tesko" value="tesko">
+                <label for="tesko">Teško</label>
+
+                <input type="radio" name="selectLevel" id="ekspert" value="ekspert">
+                <label for="ekspert">Ekspert</label>
+            </div>
+            <!--DIV sa karticama(slicicama)-->
+            <div id="cards"></div>
+        </div>
+        <div id="container-right">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
