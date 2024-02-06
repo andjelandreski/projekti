@@ -1,0 +1,17 @@
+.naslov {
+    text-align: center;
+    color: purple;
+}
+
+nav button{
+    width: 20%;
+}
+
+.buttons {
+    background-color: purple;
+    color: white;
+    border: 1px solid black;;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+}

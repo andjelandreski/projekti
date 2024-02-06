@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Naslov ceta-->
+    <header>
+        <h1 class="naslov">ITBootcamp Chat</h1>
+        <h3 class="naslov">Choose a chatroom</h3>
+    </header>
+
+    <!--Dugmad za sobe-->
+    <nav>
+        <button id="btnGeneral" class="buttons">#general</button>
+        <button id="btnJs" class="buttons">#js</button>
+        <button id="btnHomeworks" class="buttons">#homeworks</button>
+        <button id="btnTests" class="buttons">#tests</button>
+    </nav>
+
+    <!--Prostor za poruke-->
+    <section id="prikazPoruka">
+        <ul>
+
+        </ul>
+    </section>
+
+    <!--Forma za unos poruke-->
+    <form>
+        <input type="text" name="unosPoruke" id="unosPoruke" placeholder="Your message...">
+        <input type="button" value="Send" id="btnSlanjePor" class="buttons">
+    </form>
+
+    <!--Forma z aunos username-a-->
+    <form>
+        <input type="text" name="korisnickoIme" id="korisnickoIme" placeholder="Update username">
+        <input type="button" value="Update" id="btnKorisIme" class="buttons">
+    </form>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDnJHKttk0VxQnIgVF5Nn99Mg5sQt3d9Fg",
+            authDomain: "itb-js2710.firebaseapp.com",
+            projectId: "itb-js2710",
+            storageBucket: "itb-js2710.appspot.com",
+            messagingSenderId: "525932261128",
+            appId: "1:525932261128:web:a2f2ae77c5e8db481846bd"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();
+    </script>
+
+    <script src="chat.js"></script>
+</body>
+</html>
