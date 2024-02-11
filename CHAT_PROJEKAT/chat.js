@@ -3,10 +3,14 @@ class Chatroom {
         this.room = r;
         this.username = u;
         this.chats = db.collection("chats");
+        this.unsub = false;
     }
 
     set room(r) {
         this._room = r;
+        if(this.unsub){
+            this.unsub();
+        }
     } 
     
     set username(u) {
@@ -23,24 +27,30 @@ class Chatroom {
 
     //Metod za dodavanje cetova (asinhrona)
     async addChat(message){
-        //Kreiranje dokumenta koji zelimo da upisemo u bazu
-        let docChat = {
-            message: message,
-            username: this.username,
-            room: this.room,
-            created_at: new Date()
-        };
-        let response = await this.chats.add(docChat); //pamti dokument u bazi
-        return response; //vraca promis, na koji moze da se zakaci .then i .catch
+        try{
+            //Kreiranje dokumenta koji zelimo da upisemo u bazu
+            let docChat = {
+                message: message,
+                username: this.username,
+                room: this.room,
+                created_at: new Date()
+            };
+            let response = await this.chats.add(docChat); //pamti dokument u bazi
+            return response; //vraca promis, na koji moze da se zakaci .then i .catch(.try i .catch)
+        }
+        catch {
+            console.error(`Doslo je do greske`, error);
+        }
     }
 
     //Metod za ispis dodatnih cetova/dokumenata
     getChats(callback) {
-        this.chats
+        this.unsub = this.chats
         .where("room", "==", this.room)
         .orderBy("created_at")
         .onSnapshot(snapshot => {
             snapshot.docChanges().forEach(change => {
+                //console.log("----- ", change.type);
                 if(change.type == "added"){
                     callback(change.doc.data()); //prosledili smo callback funkciji change.doc.data i kada dole pozivam getChats prosledjujem nju - to se radi zato sto zelim da svaki put drugacije pozovem getChats (nekad na stranici, nekad u konzoli, itd.) => zato koristimo callback ovde
                 }
@@ -49,22 +59,4 @@ class Chatroom {
     }
 }
 
-let chatroom1 = new Chatroom("#js", "Stefan");
-let chatroom2 = new Chatroom("#random", "Jelena");
-let chatroom3 = new Chatroom("#homeworks", "Andjela");
-chatroom1.room = "general"; //Testiram seter za room
-chatroom2.username = "Pera"; //Testiram seter za username
-
-/*
-chatroom1.addChat(`Zdravo svima!`)
-    .then(() => {
-console.log("Uspesno dodata poruka");
-    })
-    .catch(err => {
-        console.log(`Doslo je do greske: ${err}`);
-    });
-*/
-
-chatroom1.getChats(data => {
-    console.log(data);
-});
+export{ Chatroom };
