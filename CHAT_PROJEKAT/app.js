@@ -65,10 +65,10 @@ btnKorisIme.addEventListener("click", ()=> {
     notification.innerHTML = `<p id="notificationPar">Korisnicko ime: ${novoKorisIme}</p>`;
     setTimeout(function() {
         notification.innerHTML = "";
-      }, 3000)
+        location.reload();
+    }, 3000)
     localStorage.setItem("username", novoKorisIme);
     inpKorisIme.value = "";
-    location.reload();
 });
  
 
