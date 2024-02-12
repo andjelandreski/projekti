@@ -88,6 +88,10 @@ li {
     border: 2px solid purple;
 }
 
+i {
+    margin-left: 95%;
+}
+
 @media only screen and (max-width: 900px) {
     #prikazPoruka {
         width: 100%;
