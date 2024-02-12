@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!--Naslov ceta-->
@@ -15,7 +18,7 @@
 
     <!--Dugmad za sobe-->
     <nav>
-        <button id="btnGeneral" class="buttons">#general</button>
+        <button id="btnGeneral" class="color-plum">#general</button>
         <button id="btnJs" class="buttons">#js</button>
         <button id="btnHomeworks" class="buttons">#homeworks</button>
         <button id="btnTests" class="buttons">#tests</button>
@@ -28,17 +31,25 @@
         </ul>
     </section>
 
+    <!--Forma za menjanje boje-->
+    <form>
+        <input type="color" id="inpColor" value="#ffffff">
+        <input type="button" value="Update color" id="btnMenjanjeBoje" class="buttons">
+    </form>
+
     <!--Forma za unos poruke-->
     <form>
-        <input type="text" name="unosPoruke" id="unosPoruke" placeholder="Your message...">
+        <textarea type="text" name="odabirBoje" class="inputText" id="unosPoruke" cols="30" rows="10"></textarea>
         <input type="button" value="Send" id="btnSlanjePor" class="buttons">
     </form>
 
     <!--Forma za unos username-a-->
     <form>
-        <input type="text" name="korisnickoIme" id="korisnickoIme" placeholder="Update username">
+        <input type="text" name="korisnickoIme" class="inputText" id="korisnickoIme" placeholder="Update username">
         <input type="button" value="Update" id="btnKorisIme" class="buttons">
     </form>
+
+    <div id="notification"></div>
     
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
