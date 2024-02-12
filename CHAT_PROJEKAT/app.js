@@ -130,7 +130,7 @@ btnMenjanjeBoje.addEventListener("click", (e)=>{
     backgroundColor = inpColor.value
     section.style.backgroundColor = backgroundColor;
     document.body.style.backgroundColor = backgroundColor;
-
+    inpColor.value = backgroundColor;
     localStorage.setItem("color", backgroundColor);
 });
 
